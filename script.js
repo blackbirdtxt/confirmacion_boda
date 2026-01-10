@@ -1,5 +1,5 @@
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyxSCub4Ro0nOdPJzyA7PunoWhD0phxWVV7zEfFCYA-JAR-1Q-G6c_HwzJp2dEs7-xSXQ/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxngMfPK-OeHT6KKoVe05_RTmJKRKOAk9ZOM_Ceep8WaNpJj8DkqDV30WGQAoKAu8K1/exec";
 
 document.getElementById("enviar").addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim();
