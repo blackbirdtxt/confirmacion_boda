@@ -15,9 +15,16 @@ document.getElementById("enviar").addEventListener("click", () => {
     method: "POST",
     body: JSON.stringify({ nombre, apellido, mensaje })
   })
-  .then(() => {
-    document.getElementById("popup").classList.remove("hidden");
-  })
+.then(() => {
+  // Mostrar popup
+  document.getElementById("popup").classList.remove("hidden");
+
+  // Limpiar campos
+  document.getElementById("nombre").value = "";
+  document.getElementById("apellido").value = "";
+  document.getElementById("mensaje").value = "";
+})
+
   .catch(() => alert("Error al enviar"));
 });
 
