@@ -104,3 +104,10 @@ button:hover {
 .hidden {
   display: none;
 }
+.couple-names {
+  white-space: nowrap;
+  font-size: 26px;
+  color: #5e35b1;
+  margin-bottom: 10px;
+}
+
