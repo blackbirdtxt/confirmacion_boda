@@ -2,33 +2,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Confirmación de Asistencia</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roxsana & Pedro | Nuestra Boda</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="card">
-        <h1>💍 Nuestra Boda</h1>
-        <p>Nos encantaría contar contigo en este día tan especial.</p>
 
-        <input type="text" id="nombre" placeholder="Escribe tu nombre completo">
+  <div class="container">
+    <div class="card animate">
+      <h1>💜 Roxsana & Pedro 💜</h1>
+      <p class="subtitle">Nos encantaría contar contigo en este día tan especial</p>
 
-        <button id="confirmar">Confirmar asistencia</button>
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="apellido" placeholder="Apellido">
 
-        <button id="enviar" class="secondary">Enviar</button>
+      <textarea id="mensaje" placeholder="Déjanos un mensaje bonito (opcional)"></textarea>
 
-        <p id="contador">Personas confirmadas: <span>0</span></p>
+      <button id="enviar">Enviar confirmación</button>
     </div>
+  </div>
 
-    <div id="popup" class="popup hidden">
-        <div class="popup-content">
-            <h2>¡Gracias!</h2>
-            <p>Gracias por confirmar tu asistencia.<br>
-            Los novios estarán felices de contar contigo 💖</p>
-            <button onclick="cerrarPopup()">Cerrar</button>
-        </div>
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>¡Gracias por acompañarnos! 💍</h2>
+      <p>
+        Gracias por confirmar tu presencia.<br>
+        Será un honor compartir este día contigo.
+      </p>
+      <button onclick="cerrarPopup()">Cerrar</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
